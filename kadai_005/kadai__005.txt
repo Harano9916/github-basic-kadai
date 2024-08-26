@@ -1,0 +1,41 @@
+PS D:\work\github> mkdir git_challenge
+
+
+    ディレクトリ: D:\work\github
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/08/27      4:32                git_challenge
+
+
+PS D:\work\github> cd git_challenge
+PS D:\work\github\git_challenge> git init
+Initialized empty Git repository in D:/work/github/git_challenge/.git/
+PS D:\work\github\git_challenge> git add hello_world.txt
+PS D:\work\github\git_challenge> git commit -m "first commit"
+[main (root-commit) 061c1de] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS D:\work\github\git_challenge> git add .
+PS D:\work\github\git_challenge> git commit -m "second commit"
+[main 1597e52] second commit
+ 1 file changed, 2 insertions(+)
+PS D:\work\github\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS D:\work\github\git_challenge> git log
+commit 1597e52e0d09eefa87815aa8c57fb8be7dae2d44 (HEAD -> main)
+Author: Harano9916 <hara.sho.ta.09.16@gmail.com>
+Date:   Tue Aug 27 05:02:03 2024 +0900
+
+    second commit
+
+commit 061c1de4396e1996febf7f14c5d972946cb1bb30
+Author: Harano9916 <hara.sho.ta.09.16@gmail.com>
+Date:   Tue Aug 27 04:54:07 2024 +0900
+
+    first commit
+PS D:\work\github\git_challenge> git log --oneline
+1597e52 (HEAD -> main) second commit
+061c1de first commit
